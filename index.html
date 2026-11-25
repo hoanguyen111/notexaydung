@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nhật Ký Thi Công - Xây Dựng | Ứng dụng iOS cho Kỹ sư Công trình</title>
+  <style>
+    :root {
+      --slate: #1E293B;
+      --slate-2: #475569;
+      --muted: #64748B;
+      --bg: #F5F6F8;
+      --card: #FFFFFF;
+      --border: #E2E8F0;
+      --amber: #F2BE18;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--slate);
+      line-height: 1.65;
+    }
+    header {
+      background: var(--slate);
+      color: #fff;
+      padding: 56px 20px;
+      text-align: center;
+      border-bottom: 5px solid var(--amber);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(242, 190, 24, 0.18);
+      color: var(--amber);
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 1px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    header h1 { font-size: 32px; font-weight: 800; margin-bottom: 12px; }
+    header p { max-width: 640px; margin: 0 auto; color: #CBD5E1; font-size: 16px; }
+    main { max-width: 860px; margin: 36px auto; padding: 0 20px 60px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .card h3 { font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+    .num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 24px; height: 24px; border-radius: 5px;
+      background: var(--amber); color: var(--slate); font-size: 12px; font-weight: 800;
+      flex-shrink: 0;
+    }
+    .card p { font-size: 14px; color: var(--slate-2); }
+    .links {
+      display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 24px;
+    }
+    .btn {
+      display: inline-block; text-decoration: none; font-weight: 600; font-size: 14px;
+      padding: 12px 20px; border-radius: 10px;
+      background: var(--slate); color: #fff;
+    }
+    .btn.secondary {
+      background: #fff; color: var(--slate); border: 1px solid var(--border);
+    }
+    footer {
+      text-align: center; color: var(--muted); font-size: 13px;
+      padding: 24px 20px; border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="badge">Chất lượng • Tiến độ • Uy tín</div>
+    <h1>Nhật Ký Thi Công - Xây Dựng</h1>
+    <p>Ứng dụng iOS chuyên dụng giúp kỹ sư công trình, đội trưởng thi công và nhà thầu ghi chép nhật ký 8 mục, đính kèm ảnh hiện trường và xuất báo cáo PDF/PNG gửi chủ đầu tư chỉ trong 1 phút.</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="num">1</span> Quản lý Công trình & Công ty</h3>
+        <p>Quản lý không giới hạn công trình, khai báo sẵn danh sách công ty với logo, địa chỉ, SĐT và email hiển thị tự động trên đầu báo cáo.</p>
+      </div>
+      <div class="card">
+        <h3><span class="num">2</span> Đủ 8 Mục Báo Cáo Chuẩn</h3>
+        <p>Nhân lực, tiến độ công việc, vật tư, nghiệm thu, phát sinh, kế hoạch ngày mai, ý kiến đề xuất và lưới hình ảnh công việc hằng ngày.</p>
+      </div>
+      <div class="card">
+        <h3><span class="num">3</span> Xuất PDF & Ảnh PNG Nét Cao</h3>
+        <p>Bố cục A4 sắc nét, bảng biểu đều nhau, hỗ trợ chữ ký điện tử tùy chọn và chia sẻ tức thì qua Zalo, Mail hoặc AirDrop.</p>
+      </div>
+      <div class="card">
+        <h3><span class="num">4</span> 100% Offline & Bảo Mật</h3>
+        <p>Hoạt động mượt mà tại công trình không có mạng. Toàn bộ dữ liệu được lưu trực tiếp trên iPhone/iPad của bạn.</p>
+      </div>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <h3 style="justify-content:center;">Thông tin Hỗ trợ & Pháp lý</h3>
+      <p style="margin-top:6px;">Dùng thử miễn phí 07 ngày đầy đủ tính năng. Sau thời gian dùng thử, mở khóa bản quyền vĩnh viễn một lần qua Apple App Store.</p>
+      <div class="links">
+        <a class="btn" href="support.html">Trang Hỗ Trợ (Support)</a>
+        <a class="btn secondary" href="privacy.html">Chính Sách Bảo Mật (Privacy Policy)</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Nhật Ký Thi Công - Xây Dựng. All rights reserved.
+  </footer>
+</body>
+</html>
